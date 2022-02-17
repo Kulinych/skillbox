@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 RANDOM_STATE = 42
 
-with open ("BOT_CONFIG.json", "r") as file:
+with open ("BOT_CONFIG.json", 'r', encoding='utf-8') as file:
   BOT_CONFIG = json.load(file)
 
 BOT_CONFIG["intents"]["hello"]
